@@ -14,6 +14,7 @@
 		D1AB28A31BF7DDCC00291BAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1AB28A11BF7DDCC00291BAB /* LaunchScreen.storyboard */; };
 		D1AB28AE1BF7DDCC00291BAB /* whereYouAreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AB28AD1BF7DDCC00291BAB /* whereYouAreTests.swift */; };
 		D1AB28B91BF7DDCC00291BAB /* whereYouAreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AB28B81BF7DDCC00291BAB /* whereYouAreUITests.swift */; };
+		D1AB28C71BF7DE1600291BAB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1AB28C61BF7DE1600291BAB /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		D1AB28B41BF7DDCC00291BAB /* whereYouAreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whereYouAreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1AB28B81BF7DDCC00291BAB /* whereYouAreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whereYouAreUITests.swift; sourceTree = "<group>"; };
 		D1AB28BA1BF7DDCC00291BAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1AB28C61BF7DE1600291BAB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1AB28C71BF7DE1600291BAB /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 		D1AB288C1BF7DDCC00291BAB = {
 			isa = PBXGroup;
 			children = (
+				D1AB28C61BF7DE1600291BAB /* MapKit.framework */,
 				D1AB28971BF7DDCC00291BAB /* whereYouAre */,
 				D1AB28AC1BF7DDCC00291BAB /* whereYouAreTests */,
 				D1AB28B71BF7DDCC00291BAB /* whereYouAreUITests */,
@@ -194,6 +198,11 @@
 					D1AB28941BF7DDCC00291BAB = {
 						CreatedOnToolsVersion = 7.1.1;
 						DevelopmentTeam = P59K8EA46D;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					D1AB28A81BF7DDCC00291BAB = {
 						CreatedOnToolsVersion = 7.1.1;
